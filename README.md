@@ -1,8 +1,23 @@
-NEURAL NETWORK FROM SCRATCH (NUMPY ONLY)
+## NEURAL NETWORK FROM SCRATCH (NUMPY ONLY)
 
 This project implements a fully connected neural network from scratch using only NumPy, without deep learning frameworks.
 The network is trained on the MNIST dataset for handwritten digit classification.
 
+The goal of this project is to demonstrate a deep understanding of:
+    - forward propagation
+    - backpropagation
+    - gradient descent optimization
+    - neural network training using matrix operations
+
+
+# Requirements
+
+    Python 3.9+
+    NumPy
+    Matplotlib (optional for visualization)
+
+    Install dependencies:
+    pip install numpy matplotlib
 
 # PROBLEM: MNIST CLASSIFICATION
     - Input images: 28 x 28 pixels
@@ -72,10 +87,41 @@ The network is trained on the MNIST dataset for handwritten digit classification
     Where:
     alpha = learning rate (user-defined hyperparameter)
 
+# Loss Function
+    The model uses categorical cross-entropy loss.
+    L = -(1/m) * Σ Σ y_i * log(p_i)
+    Where:
+    y_i - true label (one-hot encoded)
+    p_i - predicted probability from softmax
+    m -  number of training samples
+
+    During training, the model minimizes the cross-entropy loss.
+
+# Training Procedure
+    Training consists of repeating the following steps:
+
+    1. Forward propagation
+    2. Compute cross-entropy loss
+    3. Backpropagation to compute gradients
+    4. Update parameters using gradient descent
+
+    This process is repeated for multiple iterations until the loss converges.
+
+
+# Results
+    After training, the model achieves approximately:
+
+    Training accuracy: ~90%
+    Test accuracy: ~88–92%
+
+    (Note: results may vary depending on hyperparameters.)
+
+
 # SUMMARY
-    - This project demonstrates:
+    This project demonstrates:
     - Forward propagation
     - ReLU and Softmax implementation
     - Backpropagation using matrix operations
+    - Categorical cross-entropy loss
     - Gradient descent optimization
-    - Multiclass classification with one-hot encoding
+    - Multiclass classification using one-hot encoding
