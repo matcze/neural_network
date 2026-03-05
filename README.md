@@ -1,4 +1,4 @@
-## NEURAL NETWORK FROM SCRATCH (NUMPY ONLY)
+# NEURAL NETWORK FROM SCRATCH (NUMPY ONLY)
 
 This project implements a fully connected neural network from scratch using only NumPy, without deep learning frameworks.
 The network is trained on the MNIST dataset for handwritten digit classification.
@@ -19,13 +19,13 @@ The goal of this project is to demonstrate a deep understanding of:
     Install dependencies:
     pip install numpy matplotlib
 
-# PROBLEM: MNIST CLASSIFICATION
+# Problem: MNIST Classification
     - Input images: 28 x 28 pixels
     - Flattened input size: 784 features
     - Output classes: 10 (digits 0–9)
     - Task type: Multiclass classification
 
-# NEURAL NETWORK ARCHITECTURE
+# Neural Network Architecture
 # The network consists of three layers:
     Input Layer:
     - 784 nodes (one per pixel)
@@ -37,7 +37,7 @@ The goal of this project is to demonstrate a deep understanding of:
     - 10 neurons (one per class)
     - Activation function: Softmax
 
-# FORWARD PROPAGATION
+# Forward Propagation
     Let:
         >  A[0] = X (input data)
         >  W[l] = weights of layer l
@@ -51,7 +51,7 @@ The goal of this project is to demonstrate a deep understanding of:
         >  Z[2] = W[2] dot A[1] + b[2]
         >  A[2] = softmax(Z[2])
 
-# ACTIVATION FUNCTIONS
+# Activation Functions
     ReLU (Rectified Linear Unit):
         - ReLU(x) = x if x > 0
         - ReLU(x) = 0 if x <= 0
@@ -64,7 +64,7 @@ The goal of this project is to demonstrate a deep understanding of:
         - Sigmoid is typically used for binary classification.
         - Softmax is used for multiclass classification.
 
-# BACKPROPAGATION
+# Backpropagation
     Backpropagation computes gradients of the loss function with respect to weights and biases.
     Let:
     m = number of training examples
@@ -79,7 +79,7 @@ The goal of this project is to demonstrate a deep understanding of:
         >  dW[1] = (1/m) * dZ[1] dot A[0]^T
         >  db[1] = (1/m) * sum(dZ[1])
 
-# PARAMETER UPDATE (GRADIENT DESCENT)
+# Parametr Update (Gradient Descent)
     >  W[1] = W[1] - alpha * dW[1]
     >  b[1] = b[1] - alpha * db[1]
     >  W[2] = W[2] - alpha * dW[2]
@@ -117,7 +117,7 @@ The goal of this project is to demonstrate a deep understanding of:
     (Note: results may vary depending on hyperparameters.)
 
 
-# SUMMARY
+# Summary
     This project demonstrates:
     - Forward propagation
     - ReLU and Softmax implementation
