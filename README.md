@@ -3,21 +3,22 @@
 This project implements a fully connected neural network from scratch using only NumPy, without deep learning frameworks.
 The network is trained on the MNIST dataset for handwritten digit classification.
 
-The goal of this project is to demonstrate a deep understanding of:
-    - forward propagation
-    - backpropagation
-    - gradient descent optimization
-    - neural network training using matrix operations
+The goal of this project is to demonstrate a deep understanding of:<br>
+    - forward propagation<br>
+    - backpropagation<br>
+    - gradient descent optimization<br>
+    - neural network training using matrix operations.<br>
 
 
 # Requirements
 
     Python 3.9+
     NumPy
+    Pandas
     Matplotlib (optional for visualization)
 
     Install dependencies:
-    pip install numpy matplotlib
+    pip install numpy pandas matplotlib
 
 # Problem: MNIST Classification
     - Input images: 28 x 28 pixels
