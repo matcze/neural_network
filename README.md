@@ -9,7 +9,7 @@ The goal of this project is to demonstrate a deep understanding of:<br>
     - gradient descent optimization<br>
     - neural network training using matrix operations.<br>
 
-
+ 
 # Requirements
 
     Python 3.9+
