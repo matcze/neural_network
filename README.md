@@ -126,4 +126,4 @@ The goal of this project is to demonstrate a deep understanding of:<br>
     - Categorical cross-entropy loss
     - Gradient descent optimization
     - Multiclass classification using one-hot encoding
- 
+  
